@@ -37,8 +37,9 @@ the application is created with:
    contain database setting and functions
 
 ## App Screens
+<img align="left" src="./firstApp/Screenshot_2021-03-13-22-40-35-37_f212e371a3a872b6e47c8c7145b7047d.jpg"  width="200" height="300"/>
+<img align="left" src="./firstApp/Screenshot_2021-03-13-22-41-22-20_f212e371a3a872b6e47c8c7145b7047d.jpg"  width="200" height="300"/>
+<img align="right" src="./firstApp/add-new-task.jpg" width="200" height="300"/>
 <img align="left" src="./firstApp/todo_list.jpg"  width="200" height="300"/>
-                       
 <img align="center" src="./firstApp/checked_task.jpg " width="200" height="300"/>
 
-<img align="right" src="./firstApp/add-new-task.jpg" width="200" height="300"/>

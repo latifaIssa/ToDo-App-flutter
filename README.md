@@ -38,5 +38,7 @@ the application is created with:
 
 ## App Screens
 <img align="left" src="./firstApp/todo_list.jpg />
+                       
 <img align="center" src="./firstApp/checked_task.jpg />
+
 <img align="right" src="./firstApp/add-new-task.jpg />

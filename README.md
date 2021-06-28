@@ -37,8 +37,8 @@ the application is created with:
    contain database setting and functions
 
 ## App Screens
-<img align="left" src="./firstApp/todo_list.jpg" />
+<img align="left" src="./firstApp/todo_list.jpg"  width="200" height="300"/>
                        
-<img align="center" src="./firstApp/checked_task.jpg "/>
+<img align="center" src="./firstApp/checked_task.jpg " width="200" height="300"/>
 
-<img align="right" src="./firstApp/add-new-task.jpg" />
+<img align="right" src="./firstApp/add-new-task.jpg" width="200" height="300"/>

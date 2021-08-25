@@ -143,9 +143,12 @@ class TodoListState extends State<TodoList> {
                     : CircleAvatar(
                         backgroundColor: Colors.amber,
                         radius: 25.0,
-                        child: Text(
-                            getFirstLetter(this.todoList[position].title),
-                            style: TextStyle(fontWeight: FontWeight.bold)),
+                        child: this.todoList[position].title == ''
+                            ? Text(getFirstLetter('Task'),
+                                style: TextStyle(fontWeight: FontWeight.bold))
+                            : Text(
+                                getFirstLetter(this.todoList[position].title),
+                                style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
               ),
             ),

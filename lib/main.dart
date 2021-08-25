@@ -10,7 +10,7 @@ void main() => runApp(
         // ),
         ChangeNotifierProvider(
       create: (context) => TodoProvider(),
-      child: MyApp(),
+      child: ToDoApp(),
     ));
 
 class ToDoApp extends StatelessWidget {

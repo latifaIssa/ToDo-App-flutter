@@ -104,7 +104,7 @@ class TodoListState extends State<TodoList> {
 
   ListView getTodoListView() {
     return ListView.builder(
-      itemCount: count,
+      itemCount: todoList.length,
       padding: EdgeInsets.all(10),
       itemBuilder: (BuildContext context, int position) {
         return Card(
@@ -143,9 +143,12 @@ class TodoListState extends State<TodoList> {
                     : CircleAvatar(
                         backgroundColor: Colors.amber,
                         radius: 25.0,
-                        child: Text(
-                            getFirstLetter(this.todoList[position].title),
-                            style: TextStyle(fontWeight: FontWeight.bold)),
+                        child: this.todoList[position].title == ''
+                            ? Text(getFirstLetter('Task'),
+                                style: TextStyle(fontWeight: FontWeight.bold))
+                            : Text(
+                                getFirstLetter(this.todoList[position].title),
+                                style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
               ),
             ),
@@ -211,7 +214,13 @@ class TodoListState extends State<TodoList> {
   // 	}
   // }
   getFirstLetter(String title) {
-    return title.substring(0, 2);
+    // print(title.substring(0, 2));
+    try {
+      return title.substring(0, 2) == null ? 'A' : title.substring(0, 2);
+    } on Exception catch (e) {
+      // TODO
+      print(e);
+    }
   }
 
   // Returns the priority icon
